@@ -6,3 +6,4 @@
 - Javascript String & Conditional
 - Javascript Function & Looping
 - Javascript Array
+- Javascript Object
