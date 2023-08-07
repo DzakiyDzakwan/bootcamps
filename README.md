@@ -7,3 +7,7 @@
 - Javascript Function & Looping
 - Javascript Array
 - Javascript Object
+
+## Week 2
+
+- Javascript ES6
