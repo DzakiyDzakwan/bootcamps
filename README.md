@@ -11,3 +11,4 @@
 ## Week 2
 
 - Javascript ES6
+- Javascript Class
