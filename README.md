@@ -48,3 +48,4 @@ scripts": {
 - Javascript ES6
 - Javascript Class
 - Javascript Asynchronus
+- Database MYSQL
