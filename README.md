@@ -49,7 +49,9 @@ scripts": {
 - Javascript Class
 - Javascript Asynchronus
 - Database MYSQL
+- Entity Relational Database
 
 ## Week 3
 
 - Restfull API with Express
+- CRUD dengan Express dan Sequalize
