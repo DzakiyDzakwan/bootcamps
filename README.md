@@ -1,5 +1,21 @@
 # BDS-Sanbercode-NodeJS-Batch-48
 
+## Week 1
+
+- CLI dan GIT
+- Javascript String & Conditional
+- Javascript Function & Looping
+- Javascript Array
+- Javascript Object
+
+## Week 2
+
+- Javascript ES6
+- Javascript Class
+- Javascript Asynchronus
+- Database MYSQL
+- Entity Relational Database
+
 ## Instalasi Babel
 
 - Buat Project NPM
@@ -35,23 +51,39 @@ scripts": {
   },
 ```
 
-## Week 1
-
-- CLI dan GIT
-- Javascript String & Conditional
-- Javascript Function & Looping
-- Javascript Array
-- Javascript Object
-
-## Week 2
-
-- Javascript ES6
-- Javascript Class
-- Javascript Asynchronus
-- Database MYSQL
-- Entity Relational Database
-
 ## Week 3
 
 - Restfull API with Express
 - CRUD dengan Express dan Sequalize
+
+## Instalasi Sequelize
+
+- Buat Project Express dengan Express Generator
+
+```
+npx express-generator project_name
+```
+
+- Install Sequelize dengan database yang digunakan
+
+```
+npx install --save sequelize mysql2
+```
+
+-- Install Sequelize Migrations
+
+```
+npx sequelize-cli init
+```
+
+-- Create Database menggunakan Sequelize
+
+```
+npx sequelize-cli db:create
+```
+
+-- Create Model dan Migration menggunakan Sequelize
+
+```
+npx sequelize-cli model:generate --name User --attributes firstName:string,lastName:string,email:string
+```
