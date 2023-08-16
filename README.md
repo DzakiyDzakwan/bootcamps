@@ -16,7 +16,7 @@
 - Database MYSQL
 - Entity Relational Database
 
-## Instalasi Babel
+### Instalasi Babel
 
 - Buat Project NPM
   `npm init -y`
@@ -57,7 +57,7 @@ scripts": {
 - CRUD dengan Express dan Sequalize
 - Rest API with Adonis
 
-## Instalasi Sequelize
+### Instalasi Sequelize
 
 - Buat Project Express dengan Express Generator
 
