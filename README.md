@@ -88,3 +88,23 @@ npx sequelize-cli db:create
 ```
 npx sequelize-cli model:generate --name User --attributes firstName:string,lastName:string,email:string
 ```
+
+### Instalasi Adonis
+
+- Creating new project
+
+```
+npm init adonis-ts-app@latest <project-name>
+```
+
+- Starting the Server
+
+```
+node ace serve --watch
+```
+
+- All Command
+
+```
+node ade
+```
