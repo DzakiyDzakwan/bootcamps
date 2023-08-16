@@ -55,6 +55,7 @@ scripts": {
 
 - Restfull API with Express
 - CRUD dengan Express dan Sequalize
+- Rest API with Adonis
 
 ## Instalasi Sequelize
 
@@ -70,19 +71,19 @@ npx express-generator project_name
 npx install --save sequelize mysql2
 ```
 
--- Install Sequelize Migrations
+- Install Sequelize Migrations
 
 ```
 npx sequelize-cli init
 ```
 
--- Create Database menggunakan Sequelize
+- Create Database menggunakan Sequelize
 
 ```
 npx sequelize-cli db:create
 ```
 
--- Create Model dan Migration menggunakan Sequelize
+- Create Model dan Migration menggunakan Sequelize
 
 ```
 npx sequelize-cli model:generate --name User --attributes firstName:string,lastName:string,email:string
