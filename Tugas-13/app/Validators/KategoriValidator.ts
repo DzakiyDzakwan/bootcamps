@@ -24,7 +24,7 @@ export default class KategoriValidator {
    *    ```
    */
   public schema = schema.create({
-    nama: schema.string(),
+    name: schema.string(),
   });
 
   /**

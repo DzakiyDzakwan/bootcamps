@@ -24,12 +24,12 @@ export default class BukuValidator {
    *    ```
    */
   public schema = schema.create({
-    title: schema.string(),
-    summary: schema.string(),
-    year: schema.date({
-      format: "yyyy",
-    }),
-    pages: schema.number([rules.unsigned()]),
+    judul: schema.string(),
+    ringkasan: schema.string(),
+    halaman: schema.number([rules.unsigned()]),
+    kategori_id: schema.string([
+      rules.exists({ table: "kategoris", column: "id" }),
+    ]),
   });
 
   /**
@@ -43,5 +43,8 @@ export default class BukuValidator {
    * }
    *
    */
-  public messages: CustomMessages = {};
+  public messages: CustomMessages = {
+    required: "{{ field }} Tidak boleh kosong",
+    "kategori_id.exists": "Kategori tidak tersedia",
+  };
 }

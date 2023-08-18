@@ -57,6 +57,7 @@ scripts": {
 - CRUD dengan Express dan Sequalize
 - Rest API with Adonis
 - Migration with Adonis
+- CRUD with Adonis
 
 ### Instalasi Sequelize
 
