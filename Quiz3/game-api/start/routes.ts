@@ -18,8 +18,14 @@
 |
 */
 
-import Route from '@ioc:Adonis/Core/Route'
+import Route from "@ioc:Adonis/Core/Route";
 
-Route.get('/', async () => {
-  return { hello: 'world' }
+Route.get("/", async () => {
+  return { hello: "world" };
+});
+
+Route.group(() => {
+  Route.resource("genres", "GenresController");
 })
+  .prefix("api/v1")
+  .namespace("App/Controllers/Http");
