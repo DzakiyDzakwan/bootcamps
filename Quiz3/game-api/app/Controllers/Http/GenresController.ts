@@ -31,7 +31,9 @@ export default class GenresController {
       if (!data) {
         return response.notFound({ message: "Data tidak berhasil ditemukan" });
       }
-      return response.ok({ message: "Berhasil", data: data });
+      let games = await Database.from("games").where("genre_id", data.id);
+      data.games = games;
+      return response.ok(data);
     } catch (error) {}
   }
 
