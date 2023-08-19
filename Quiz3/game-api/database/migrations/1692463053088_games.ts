@@ -9,6 +9,12 @@ export default class extends BaseSchema {
       table.string("title");
       table.text("gameplay", "longtext");
       table.dateTime("release_date");
+      table.integer("genre_id").unsigned();
+      table
+        .foreign("genre_id")
+        .references("genres.id")
+        .onDelete("cascade")
+        .onUpdate("cascade");
       /**
        * Uses timestamptz for PostgreSQL and DATETIME2 for MSSQL
        */

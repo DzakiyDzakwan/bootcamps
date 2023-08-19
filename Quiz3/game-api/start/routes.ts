@@ -26,6 +26,7 @@ Route.get("/", async () => {
 
 Route.group(() => {
   Route.resource("genres", "GenresController");
+  Route.resource("games", "GamesController");
 })
   .prefix("api/v1")
   .namespace("App/Controllers/Http");
