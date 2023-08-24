@@ -43,6 +43,15 @@ Route.group(() => {
 
   Route.resource("/kategori", "KategorisController");
   Route.resource("/buku", "BukusController");
+  Route.resource("/user", "UsersController");
+  Route.post("/profile", "UsersController.addProfile").middleware("auth");
 })
   .prefix("/api/v1")
   .namespace("App/Controllers/Http");
+
+Route.group(() => {
+  Route.post("/register", "AuthController.register");
+  Route.post("/login", "AuthController.login");
+  Route.post("/logout", "AuthController.logout").middleware("auth");
+  Route.post("/me", "AuthController.me");
+}).prefix("api/v1/auth");

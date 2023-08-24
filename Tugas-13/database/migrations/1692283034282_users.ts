@@ -8,8 +8,9 @@ export default class extends BaseSchema {
       table.increments("id");
       table.string("nama", 45);
       table.string("email", 45).unique();
-      table.string("password", 45);
+      table.string("password", 180).notNullable();
       table.enum("role", ["admin", "user"]);
+      table.string("remember_me_token").nullable();
       /**
        * Uses timestamptz for PostgreSQL and DATETIME2 for MSSQL
        */
