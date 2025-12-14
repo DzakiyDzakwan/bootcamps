@@ -1,0 +1,12 @@
+[
+  { "name": "Bondra", "password": "123456", "role": "admin", "isLogin": true },
+  {
+    "name": "Iqbal",
+    "password": "654321",
+    "role": "trainer",
+    "isLogin": false,
+    "students": [{ "name": "Regy", "class": "Adonis" }]
+  },
+  { "name": "Admin2", "password": "654321", "role": "admin", "isLogin": false },
+  { "name": "Admin3", "password": "654321", "role": "admin", "isLogin": false }
+]
